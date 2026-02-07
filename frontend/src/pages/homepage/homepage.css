@@ -1,0 +1,135 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.homepage-title {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.homepage-description {
+  max-width: 50%;
+  font-size: 2rem;
+  color: #4b5563;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.homepage-content {
+  display: flex;
+  gap: 400px;
+  align-items: center;
+}
+
+.homepage-button {
+  display: flex;
+  gap: 20px;
+}
+
+.homepage-button1 {
+  white-space: nowrap;
+
+  padding: 0.8rem 2rem;
+
+  cursor: pointer;
+  color: #ffffff;
+
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #000000;
+  cursor: pointer;
+  border: 1px solid #b9b7b7;
+  transition: all 0.3s;
+  box-shadow:
+    3px 3px 4px #cacaca,
+    -3px -3px 4px #ffffff;
+}
+.homepage-button2 {
+  white-space: nowrap;
+
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #090909;
+
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #e3e3e3;
+  transition: all 0.3s;
+  box-shadow:
+    3px 3px 4px #cbcaca,
+    -3px -3px 4px #ffffff;
+}
+
+.homepage-button1:hover {
+  background-color: #363637;
+}
+
+.homepage-button2:hover {
+  background-color: #f0f0f0;
+}
+/* stats section  */
+.homepage-stats {
+  display: flex;
+  gap: 200px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.stat-item {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 5px;
+}
+.stat-number {
+  font-size: 4rem;
+  color: #111827;
+  font-weight: 800;
+}
+.stat-label {
+  font-size: 1.5rem;
+  color: #4b5563;
+}
+
+
+
+/* our services  */
+
+.homepage-services-section {
+  margin-top: 50px;
+  
+  color: #111827;
+}
+.homepage-services-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.homepage-services {
+  display: flex;
+  gap: 70px;
+  margin-top: 50px;
+  justify-content: center;
+}
+.service-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+}
+.service-description {
+  font-size: 1.2rem;
+  color: #7b7c7c;
+  margin-top: 10px;
+}

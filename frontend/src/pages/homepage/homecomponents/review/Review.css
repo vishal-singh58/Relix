@@ -1,0 +1,74 @@
+.homepage-testimonials-section {
+  margin: 120px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.homepage-testimonials-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  letter-spacing: -0.03em;
+}
+
+/* grid layout */
+.homepage-testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* glass card */
+.testimonial-item {
+  padding: 32px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+/* glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+/* author */
+.testimonial-author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.testimonial-author img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.testimonial-author strong {
+  font-size: 1rem;
+}
+
+.testimonial-author span {
+  display: block;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.verified {
+  color: #2563eb;
+  font-size: 0.8rem;
+  margin-left: 6px;
+}
+

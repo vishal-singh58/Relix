@@ -1,0 +1,102 @@
+.newarrival {
+  padding: 60px 40px;
+}
+
+.newarrival-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.newarrival-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  background: #000;
+  transform: translateX(-50%);
+  transition: width 0.4s ease;
+}
+
+.newarrival-title:hover::after {
+  width: 100px;
+}
+
+
+
+
+
+
+
+/* GRID */
+.newarrival-items {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(2, 260px);
+  gap: 10px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* COMMON ITEM */
+.newarrival-item {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.newarrival-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LEFT TOP */
+.newarrival-item:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* RIGHT TOP */
+.newarrival-item:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/* LEFT BOTTOM */
+.newarrival-item:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* RIGHT BOTTOM */
+.newarrival-item:nth-child(4) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* BIG CENTER IMAGE */
+.newarrival-item:nth-child(5) {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+/* IMAGE EFFECT */
+.newarrival-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* black & white by default */
+  filter: grayscale(70%);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+/* hover effect */
+.newarrival-item:hover .newarrival-image {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+

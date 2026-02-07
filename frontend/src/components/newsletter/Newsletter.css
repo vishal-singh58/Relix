@@ -1,0 +1,38 @@
+.newsletter {
+  width: 80%;
+    margin: 30px auto;
+  background-color: rgb(62, 81, 102);
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 16px;
+}
+.newsletter h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+    margin-bottom: 15px;
+}
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+}
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: #5280b6;
+}
