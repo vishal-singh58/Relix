@@ -1,0 +1,88 @@
+.aboutus {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 20px 100px;
+
+  font-family: "Inter", "Poppins", sans-serif;
+  color: #1f2933;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* MAIN TITLE */
+.aboutus h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #111827;
+}
+
+/* SUBTITLE */
+.aboutus h2 {
+  font-size: 3.9rem;
+  font-weight: 500;
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 0px;
+}
+
+/* INTRO PARAGRAPH */
+.aboutus .first {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4b5563;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* CONTENT PARAGRAPHS */
+.aboutus .second,
+.aboutus .third,
+.aboutus .fourth,
+.aboutus .fifth {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: #374151;
+
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 18px;
+  padding: 28px 32px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.6);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* HOVER LIFT */
+.aboutus .second:hover,
+.aboutus .third:hover,
+.aboutus .fourth:hover,
+.aboutus .fifth:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.12),
+    inset 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+/* SUBTLE DIVIDER FEEL */
+.aboutus .third {
+  border-left: 4px solid #e5e7eb;
+}
+
+.aboutus .fourth {
+  border-left: 4px solid #d1d5db;
+}
+
+.aboutus .fifth {
+  border-left: 4px solid #9ca3af;
+}
+

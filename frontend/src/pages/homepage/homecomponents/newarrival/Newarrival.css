@@ -90,7 +90,7 @@
   object-fit: cover;
 
   /* black & white by default */
-  filter: grayscale(70%);
+  filter: grayscale(100%);
   transition: filter 0.5s ease, transform 0.5s ease;
 }
 

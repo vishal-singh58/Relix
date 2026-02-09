@@ -1,0 +1,103 @@
+.services {
+  padding: 90px 20px 110px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+/* HEADER */
+.services-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 70px;
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.services-header h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 10px 0 18px;
+}
+
+.services-header p {
+  color: #4b5563;
+  font-size: 1.05rem;
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+/* CARD WITH IMAGE */
+.service-card {
+  height: 320px;
+  border-radius: 22px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  filter: grayscale(100%);
+
+  transition:filter 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* DARK GRADIENT OVERLAY */
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.2)
+  );
+  transition: background 0.4s ease;
+}
+
+.service-card:hover {
+    filter: grayscale(0%);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+/* CONTENT */
+.service-overlay {
+  position: absolute;
+  bottom: 26px;
+  left: 26px;
+  right: 26px;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.service-overlay h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.service-cta {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.service-card:hover .service-cta {
+  transform: translateX(6px);
+  opacity: 1;
+}
+
+
+

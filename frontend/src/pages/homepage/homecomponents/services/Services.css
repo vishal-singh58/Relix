@@ -1,0 +1,28 @@
+
+/* our services  */
+
+.homepage-services-section {
+  margin-top: 50px;
+  
+  color: #111827;
+}
+.homepage-services-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.homepage-services {
+  display: flex;
+  gap: 70px;
+  margin-top: 50px;
+  justify-content: center;
+}
+.service-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+}
+.service-description {
+  font-size: 1.2rem;
+  color: #7b7c7c;
+  margin-top: 10px;
+}
