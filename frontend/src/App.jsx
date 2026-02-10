@@ -4,11 +4,11 @@ import HomePage from "./pages/homepage/HomePage.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Aboutpage from "./pages/aboutpage/Aboutpage.jsx";
-import Catalogue from "./pages/Catalogue.jsx";
+import Catalogue from "./pages/cataloguepaage/Catalogue.jsx";
 import Services from "./pages/servicespage/Services.jsx";
-import Blog from "./pages/Blog.jsx";
-import FAQ from "./pages/FAQ.jsx";
-import Contact from "./pages/Contact.jsx";
+import Blog from "./pages/blogpage/Blog.jsx";
+import FAQ from "./pages/faqpage/FAQ.jsx";
+import Contact from "./pages/contactpage/Contact.jsx";
 import Newsletter from "./components/newsletter/Newsletter.jsx";
 
 
