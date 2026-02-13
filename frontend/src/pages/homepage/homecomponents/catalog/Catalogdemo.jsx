@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./Catalog.css";
 
 const images = [
@@ -39,7 +40,7 @@ const BlurImage = ({ src }) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <motion.div
+      <motion.div
       className="masonry-item"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -53,9 +54,15 @@ const BlurImage = ({ src }) => {
         className={`masonry-img ${loaded ? "loaded" : ""}`}
         alt="Work preview"
       />
+
+      {/* Simple Arrow */}
+      <Link to="/catalogue" className="image-arrow">
+        ↗
+      </Link>
     </motion.div>
   );
 };
+
 
 export default Catalogdemo;
 
