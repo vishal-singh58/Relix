@@ -1,0 +1,127 @@
+/* PAGE BASE */
+.contact-page {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #616161;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.contact-hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+}
+
+.contact-hero p {
+  color: #666;
+  margin-top: 10px;
+}
+
+/* CONTAINER */
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0 20px 80px;
+}
+
+/* GLASS CARD */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* FORM */
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #c7a17a, #a67c52);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: scale(1.03);
+}
+
+/* INFO */
+.contact-info p {
+  margin: 12px 0;
+  color: #444;
+}
+
+/* MAP */
+.map-section {
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* FADE-IN */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .glass-card {
+    padding: 25px;
+  }
+
+  .map-section iframe {
+    height: 280px;
+  }
+}

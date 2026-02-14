@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import "./Blog.css";
 
-export default function LuxuryFurnitureBlog() {
-
-  // Scroll Fade-in Effect
+const BlogDetail = () => {
   useEffect(() => {
-    const sections = document.querySelectorAll(".fade-in");
+    const elements = document.querySelectorAll(".fade-in");
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -15,102 +13,92 @@ export default function LuxuryFurnitureBlog() {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.15 }
     );
 
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
+    elements.forEach((el) => observer.observe(el));
   }, []);
 
   return (
-    <div className="luxury-blog">
+    <div className="blog-detail">
 
       {/* HERO */}
-      <div className="luxury-hero">
+      <section className="blog-hero fade-in">
+        <h1>Luxury Meets Comfort: The Future of Modern Furniture</h1>
+        <p>By Admin • February 2026 • Interior Design</p>
+      </section>
+
+      {/* FEATURED IMAGE */}
+      <div className="blog-image fade-in">
         <img
-          src="https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1600&auto=format&fit=crop"
-          alt="Luxury Interior"
+          src="https://images.unsplash.com/photo-1615874959474-d609969a20ed"
+          alt="Modern Living Room"
         />
-        <div className="glass-hero">
-          <h1>Luxury Furniture That Completes Your Space</h1>
-          <p>Timeless Elegance • Modern Comfort</p>
-        </div>
       </div>
 
-      {/* MAIN CONTENT + SIDEBAR */}
-      <div className="blog-layout">
+      {/* CONTENT */}
+      <div className="blog-content fade-in">
+        <p>
+          Modern furniture blends functionality with elegance. Today’s
+          designs focus on sustainability, minimalism, and comfort.
+        </p>
 
-        {/* BLOG CONTENT */}
-        <div className="blog-main">
-          <section className="fade-in">
-            <h2>Furniture Defines Identity</h2>
-            <p>
-              Luxury furniture doesn’t just decorate — it defines the character
-              of your home. Carefully selected textures, finishes, and shapes
-              create an environment that feels curated and intentional.
-            </p>
-          </section>
+        <h2>Design That Defines Lifestyle</h2>
+        <p>
+          Every piece of furniture reflects personality. From premium sofas
+          to handcrafted wooden tables, luxury interiors balance beauty and utility.
+        </p>
+      </div>
 
-          <section className="fade-in">
-            <h2>Harmony Through Design</h2>
-            <p>
-              Dark walnut finishes, brushed gold accents, and premium fabrics
-              elevate interiors into sophisticated living experiences.
-            </p>
-          </section>
+      {/* 🛒 SHOP THE LOOK SECTION */}
+      <section className="shop-look fade-in">
+        <h2>Shop the Look</h2>
 
-          <section className="fade-in">
-            <h2>Statement Pieces</h2>
-            <p>
-              A sculptural coffee table or velvet accent chair becomes the
-              centerpiece — complementing your space while commanding attention.
-            </p>
-          </section>
+        <div className="shop-grid">
 
-          {/* SHOP THE LOOK */}
-          <section className="shop-section fade-in">
-            <h2>Shop the Look</h2>
-
-            <div className="shop-grid">
-              <div className="product">
-                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop" alt="Sofa" />
-                <h4>Velvet Luxe Sofa</h4>
-                <span>$899</span>
-              </div>
-
-              <div className="product">
-                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop" alt="Dining Table" />
-                <h4>Marble Dining Table</h4>
-                <span>$1299</span>
-              </div>
-
-              <div className="product">
-                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop" alt="Lamp" />
-                <h4>Designer Floor Lamp</h4>
-                <span>$299</span>
-              </div>
+          <div className="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+              alt="Luxury Sofa"
+            />
+            <div className="product-info">
+              <h3>Velvet Luxe Sofa</h3>
+              <p>₹54,999</p>
+              <button>View Product</button>
             </div>
-          </section>
-        </div>
-
-        {/* SIDEBAR */}
-        <aside className="blog-sidebar fade-in">
-          <h3>Recent Articles</h3>
-          <ul>
-            <li>How to Style a Minimal Living Room</li>
-            <li>Choosing the Perfect Accent Chair</li>
-            <li>Modern Lighting Trends 2026</li>
-          </ul>
-
-          <div className="sidebar-box">
-            <h4>Design Tip</h4>
-            <p>
-              Mix matte and glossy textures to create visual contrast in dark interiors.
-            </p>
           </div>
-        </aside>
-      </div>
+
+          <div className="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1493666438817-866a91353ca9"
+              alt="Coffee Table"
+            />
+            <div className="product-info">
+              <h3>Walnut Coffee Table</h3>
+              <p>₹18,499</p>
+              <button>View Product</button>
+            </div>
+          </div>
+
+          <div className="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZnVybml0dXJlfGVufDB8fDB8fHww"
+              alt="Accent Chair"
+            />
+            <div className="product-info">
+              <h3>Modern Accent Chair</h3>
+              <p>₹22,999</p>
+              <button>View Product</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </div>
   );
-}
+};
+
+export default BlogDetail;
+
+

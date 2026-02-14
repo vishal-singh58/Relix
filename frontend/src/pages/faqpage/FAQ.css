@@ -1,0 +1,45 @@
+.product-faq {
+  padding: 80px 20px;
+  max-width: 850px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-faq h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #5c5c5c;
+}
+
+.product-faq-item {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: #fff;
+}
+
+.product-faq-item:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.product-faq-question {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.product-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+  color: #666;
+}
+
+.product-faq-item.open .product-faq-answer {
+  max-height: 200px;
+  margin-top: 10px;
+}

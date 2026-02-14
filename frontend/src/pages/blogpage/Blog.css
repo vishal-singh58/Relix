@@ -1,137 +1,181 @@
-
-.luxury-blog {
-  background: #ffffff;
-  color: #363434;
+.blog-detail {
   font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
 }
 
 /* HERO */
-.luxury-hero {
-  position: relative;
-  height: 80vh;
-  overflow: hidden;
+.blog-hero {
+  text-align: center;
+  padding: 100px 20px 50px;
 }
 
-.luxury-hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(50%);
-}
-
-/* GLASSMORPHISM */
-.glass-hero {
-  position: absolute;
-  bottom: 80px;
-  left: 10%;
-  padding: 40px;
-  backdrop-filter: blur(15px);
-  background: #b8a7a7;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  max-width: 600px;
-}
-
-.glass-hero h1 {
+.blog-hero h1 {
   font-size: 2.8rem;
-  margin-bottom: 10px;
+  line-height: 1.3;
+  color: #5c5c5c;
 }
 
-.glass-hero p {
-  opacity: 0.8;
+.blog-hero p {
+  opacity: 0.7;
+  margin-top: 10px;
 }
 
-/* LAYOUT */
-.blog-layout {
-  display: flex;
+/* IMAGE */
+.blog-image {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 22px;
+  transition: transform 0.6s ease;
+}
+
+.blog-image img:hover {
+  transform: scale(1.04);
+}
+
+/* CONTENT */
+.blog-content {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+}
+
+.blog-content h2 {
+  margin-top: 35px;
+  font-size: 1.7rem;
+}
+
+/* SHOP THE LOOK */
+.shop-look {
   max-width: 1200px;
   margin: 80px auto;
   padding: 0 20px;
-  gap: 60px;
+  color: #6d6d6d;
 }
 
-.blog-main {
-  flex: 3;
-}
-
-.blog-sidebar {
-  flex: 1;
-}
-
-.blog-sidebar h3 {
-  margin-bottom: 20px;
-}
-
-.blog-sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.blog-sidebar li {
-  margin-bottom: 15px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.blog-sidebar li:hover {
-  color: #c9a74d;
-}
-
-.sidebar-box {
-  margin-top: 40px;
-  padding: 20px;
-  background: #dfd2d2;
-  
-  border-radius: 12px;
-}
-
-/* SHOP SECTION */
-.shop-section {
-  margin-top: 60px;
+.shop-look h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 .shop-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 30px;
+  gap: 30px;
 }
 
-.product {
+.product-card {
   background: #ffffff;
-  border-radius: 1px solid black;
-  padding: 15px;
-  border-radius: 16px;
-  transition: 0.4s;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.product img {
+.product-card img {
   width: 100%;
-  border-radius: 12px;
+  height: 240px;
+  object-fit: cover;
 }
 
-.product h4 {
-  margin-top: 15px;
+.product-info {
+  padding: 20px;
 }
 
-.product span {
-  color: #c9a74d;
+.product-info h3 {
+  font-size: 1.2rem;
+}
+
+.product-info p {
+  margin: 10px 0;
+  color: #c7a17a;
   font-weight: 600;
 }
 
-.product:hover {
-  transform: translateY(-8px);
+.product-info button {
+  background: linear-gradient(135deg, #c7a17a, #a67c52);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  transition: transform 0.3s ease;
 }
 
-/* FADE-IN ANIMATION */
+.product-info button:hover {
+  transform: scale(1.05);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+/* FADE ANIMATION */
 .fade-in {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 1s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* 📱 MOBILE OPTIMIZATION */
+@media (max-width: 1024px) {
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-hero {
+    padding: 70px 20px 40px;
+  }
+
+  .blog-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  .blog-content {
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .shop-look h2 {
+    font-size: 1.6rem;
+  }
+
+  .product-info {
+    padding: 15px;
+  }
 }
 
