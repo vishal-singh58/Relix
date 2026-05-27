@@ -1,5 +1,5 @@
 import React from "react";
-import "./homePage.css";
+import "./HomePage.css";
 import Newarrival from "./homecomponents/newarrival/Newarrival";
 import Parallax from "./homecomponents/Parallax/Parallax";
 import Catalogdemo from "./homecomponents/catalog/Catalogdemo";
