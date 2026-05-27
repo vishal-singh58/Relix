@@ -71,23 +71,7 @@ Designed for performance, maintainability, and seamless deployment workflows.
 
 ---
 
-## 📸 Screenshots
 
-### Homepage
-
-<img width="100%" src="./screenshots/home.png" alt="Homepage"/>
-
-### Dashboard
-
-<img width="100%" src="./screenshots/dashboard.png" alt="Dashboard"/>
-
-### Authentication
-
-<img width="100%" src="./screenshots/auth.png" alt="Auth"/>
-
-> Replace screenshots with your own project images.
-
----
 
 ## 📂 Project Structure
 
