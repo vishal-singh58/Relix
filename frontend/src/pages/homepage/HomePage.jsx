@@ -44,7 +44,7 @@ const HomePage = () => {
       </div>
 
       <div className="homepage-parallax-section">
-        <Parallax />
+      
       </div>
       <div className="homepage-catalogdemo-section">
         <Catalogdemo />
