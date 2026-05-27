@@ -1,11 +1,10 @@
 import React from "react";
-import "./HomePage.css";
+ import "./homepage.css"; 
 import Newarrival from "./homecomponents/newarrival/Newarrival";
 import Parallax from "./homecomponents/Parallax/Parallax";
 import Catalogdemo from "./homecomponents/catalog/Catalogdemo";
 import Review from "./homecomponents/review/Review";
 import Services from "./homecomponents/services/Services";
-
 
 const HomePage = () => {
   return (
