@@ -6,6 +6,7 @@ import Catalogdemo from "./homecomponents/catalog/Catalogdemo";
 import Review from "./homecomponents/review/Review";
 import Services from "./homecomponents/services/Services";
 
+
 const HomePage = () => {
   return (
     <div className="homepage">
